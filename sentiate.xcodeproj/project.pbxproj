@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		247746D118F9D65F001D0F10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746D018F9D65F001D0F10 /* Foundation.framework */; };
+		247746D318F9D65F001D0F10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746D218F9D65F001D0F10 /* CoreGraphics.framework */; };
+		247746D518F9D65F001D0F10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746D418F9D65F001D0F10 /* UIKit.framework */; };
+		247746DB18F9D65F001D0F10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 247746D918F9D65F001D0F10 /* InfoPlist.strings */; };
+		247746DD18F9D65F001D0F10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 247746DC18F9D65F001D0F10 /* main.m */; };
+		247746E118F9D65F001D0F10 /* SENAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 247746E018F9D65F001D0F10 /* SENAppDelegate.m */; };
+		247746E418F9D65F001D0F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247746E218F9D65F001D0F10 /* Main.storyboard */; };
+		247746E718F9D65F001D0F10 /* SENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247746E618F9D65F001D0F10 /* SENViewController.m */; };
+		247746E918F9D65F001D0F10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247746E818F9D65F001D0F10 /* Images.xcassets */; };
+		247746F018F9D65F001D0F10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746EF18F9D65F001D0F10 /* XCTest.framework */; };
+		247746F118F9D65F001D0F10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746D018F9D65F001D0F10 /* Foundation.framework */; };
+		247746F218F9D65F001D0F10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746D418F9D65F001D0F10 /* UIKit.framework */; };
+		247746FA18F9D65F001D0F10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 247746F818F9D65F001D0F10 /* InfoPlist.strings */; };
+		247746FC18F9D65F001D0F10 /* sentiateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 247746FB18F9D65F001D0F10 /* sentiateTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		247746F318F9D65F001D0F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 247746C518F9D65F001D0F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 247746CC18F9D65F001D0F10;
+			remoteInfo = sentiate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		247746CD18F9D65F001D0F10 /* sentiate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sentiate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		247746D018F9D65F001D0F10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		247746D218F9D65F001D0F10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		247746D418F9D65F001D0F10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		247746D818F9D65F001D0F10 /* sentiate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sentiate-Info.plist"; sourceTree = "<group>"; };
+		247746DA18F9D65F001D0F10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		247746DC18F9D65F001D0F10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		247746DE18F9D65F001D0F10 /* sentiate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sentiate-Prefix.pch"; sourceTree = "<group>"; };
+		247746DF18F9D65F001D0F10 /* SENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SENAppDelegate.h; sourceTree = "<group>"; };
+		247746E018F9D65F001D0F10 /* SENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SENAppDelegate.m; sourceTree = "<group>"; };
+		247746E318F9D65F001D0F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		247746E518F9D65F001D0F10 /* SENViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SENViewController.h; sourceTree = "<group>"; };
+		247746E618F9D65F001D0F10 /* SENViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SENViewController.m; sourceTree = "<group>"; };
+		247746E818F9D65F001D0F10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		247746EE18F9D65F001D0F10 /* sentiateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sentiateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		247746EF18F9D65F001D0F10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		247746F718F9D65F001D0F10 /* sentiateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sentiateTests-Info.plist"; sourceTree = "<group>"; };
+		247746F918F9D65F001D0F10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		247746FB18F9D65F001D0F10 /* sentiateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sentiateTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		247746CA18F9D65F001D0F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247746D318F9D65F001D0F10 /* CoreGraphics.framework in Frameworks */,
+				247746D518F9D65F001D0F10 /* UIKit.framework in Frameworks */,
+				247746D118F9D65F001D0F10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247746EB18F9D65F001D0F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247746F018F9D65F001D0F10 /* XCTest.framework in Frameworks */,
+				247746F218F9D65F001D0F10 /* UIKit.framework in Frameworks */,
+				247746F118F9D65F001D0F10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		247746C418F9D65F001D0F10 = {
+			isa = PBXGroup;
+			children = (
+				247746D618F9D65F001D0F10 /* sentiate */,
+				247746F518F9D65F001D0F10 /* sentiateTests */,
+				247746CF18F9D65F001D0F10 /* Frameworks */,
+				247746CE18F9D65F001D0F10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		247746CE18F9D65F001D0F10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				247746CD18F9D65F001D0F10 /* sentiate.app */,
+				247746EE18F9D65F001D0F10 /* sentiateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247746CF18F9D65F001D0F10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247746D018F9D65F001D0F10 /* Foundation.framework */,
+				247746D218F9D65F001D0F10 /* CoreGraphics.framework */,
+				247746D418F9D65F001D0F10 /* UIKit.framework */,
+				247746EF18F9D65F001D0F10 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		247746D618F9D65F001D0F10 /* sentiate */ = {
+			isa = PBXGroup;
+			children = (
+				247746DF18F9D65F001D0F10 /* SENAppDelegate.h */,
+				247746E018F9D65F001D0F10 /* SENAppDelegate.m */,
+				247746E218F9D65F001D0F10 /* Main.storyboard */,
+				247746E518F9D65F001D0F10 /* SENViewController.h */,
+				247746E618F9D65F001D0F10 /* SENViewController.m */,
+				247746E818F9D65F001D0F10 /* Images.xcassets */,
+				247746D718F9D65F001D0F10 /* Supporting Files */,
+			);
+			path = sentiate;
+			sourceTree = "<group>";
+		};
+		247746D718F9D65F001D0F10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				247746D818F9D65F001D0F10 /* sentiate-Info.plist */,
+				247746D918F9D65F001D0F10 /* InfoPlist.strings */,
+				247746DC18F9D65F001D0F10 /* main.m */,
+				247746DE18F9D65F001D0F10 /* sentiate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		247746F518F9D65F001D0F10 /* sentiateTests */ = {
+			isa = PBXGroup;
+			children = (
+				247746FB18F9D65F001D0F10 /* sentiateTests.m */,
+				247746F618F9D65F001D0F10 /* Supporting Files */,
+			);
+			path = sentiateTests;
+			sourceTree = "<group>";
+		};
+		247746F618F9D65F001D0F10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				247746F718F9D65F001D0F10 /* sentiateTests-Info.plist */,
+				247746F818F9D65F001D0F10 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		247746CC18F9D65F001D0F10 /* sentiate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiate" */;
+			buildPhases = (
+				247746C918F9D65F001D0F10 /* Sources */,
+				247746CA18F9D65F001D0F10 /* Frameworks */,
+				247746CB18F9D65F001D0F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sentiate;
+			productName = sentiate;
+			productReference = 247746CD18F9D65F001D0F10 /* sentiate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		247746ED18F9D65F001D0F10 /* sentiateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2477470218F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiateTests" */;
+			buildPhases = (
+				247746EA18F9D65F001D0F10 /* Sources */,
+				247746EB18F9D65F001D0F10 /* Frameworks */,
+				247746EC18F9D65F001D0F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				247746F418F9D65F001D0F10 /* PBXTargetDependency */,
+			);
+			name = sentiateTests;
+			productName = sentiateTests;
+			productReference = 247746EE18F9D65F001D0F10 /* sentiateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		247746C518F9D65F001D0F10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SEN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Robert Carlsen";
+				TargetAttributes = {
+					247746ED18F9D65F001D0F10 = {
+						TestTargetID = 247746CC18F9D65F001D0F10;
+					};
+				};
+			};
+			buildConfigurationList = 247746C818F9D65F001D0F10 /* Build configuration list for PBXProject "sentiate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 247746C418F9D65F001D0F10;
+			productRefGroup = 247746CE18F9D65F001D0F10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				247746CC18F9D65F001D0F10 /* sentiate */,
+				247746ED18F9D65F001D0F10 /* sentiateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		247746CB18F9D65F001D0F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247746E918F9D65F001D0F10 /* Images.xcassets in Resources */,
+				247746DB18F9D65F001D0F10 /* InfoPlist.strings in Resources */,
+				247746E418F9D65F001D0F10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247746EC18F9D65F001D0F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247746FA18F9D65F001D0F10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		247746C918F9D65F001D0F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247746E718F9D65F001D0F10 /* SENViewController.m in Sources */,
+				247746DD18F9D65F001D0F10 /* main.m in Sources */,
+				247746E118F9D65F001D0F10 /* SENAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247746EA18F9D65F001D0F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247746FC18F9D65F001D0F10 /* sentiateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		247746F418F9D65F001D0F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 247746CC18F9D65F001D0F10 /* sentiate */;
+			targetProxy = 247746F318F9D65F001D0F10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		247746D918F9D65F001D0F10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				247746DA18F9D65F001D0F10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		247746E218F9D65F001D0F10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				247746E318F9D65F001D0F10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		247746F818F9D65F001D0F10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				247746F918F9D65F001D0F10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		247746FD18F9D65F001D0F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		247746FE18F9D65F001D0F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2477470018F9D65F001D0F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sentiate/sentiate-Prefix.pch";
+				INFOPLIST_FILE = "sentiate/sentiate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2477470118F9D65F001D0F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sentiate/sentiate-Prefix.pch";
+				INFOPLIST_FILE = "sentiate/sentiate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2477470318F9D65F001D0F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sentiate.app/sentiate";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sentiate/sentiate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sentiateTests/sentiateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2477470418F9D65F001D0F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sentiate.app/sentiate";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sentiate/sentiate-Prefix.pch";
+				INFOPLIST_FILE = "sentiateTests/sentiateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		247746C818F9D65F001D0F10 /* Build configuration list for PBXProject "sentiate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247746FD18F9D65F001D0F10 /* Debug */,
+				247746FE18F9D65F001D0F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2477470018F9D65F001D0F10 /* Debug */,
+				2477470118F9D65F001D0F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2477470218F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2477470318F9D65F001D0F10 /* Debug */,
+				2477470418F9D65F001D0F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 247746C518F9D65F001D0F10 /* Project object */;
+}
