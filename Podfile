@@ -2,7 +2,7 @@
 platform :ios, "7.0"
 
 target "sentiate" do
-
+pod 'ReactiveCocoa'
 end
 
 target "sentiateTests" do

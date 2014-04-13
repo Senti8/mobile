@@ -21,6 +21,10 @@
 		247746F218F9D65F001D0F10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247746D418F9D65F001D0F10 /* UIKit.framework */; };
 		247746FA18F9D65F001D0F10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 247746F818F9D65F001D0F10 /* InfoPlist.strings */; };
 		247746FC18F9D65F001D0F10 /* sentiateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 247746FB18F9D65F001D0F10 /* sentiateTests.m */; };
+		2477470618F9D8BE001D0F10 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2477470518F9D8BE001D0F10 /* CoreBluetooth.framework */; };
+		2477471118F9DD17001D0F10 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 2477470F18F9DD17001D0F10 /* BLE.m */; };
+		24DB874318F9E0C0009D3CDA /* SENViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB874218F9E0C0009D3CDA /* SENViewModel.m */; };
+		676F685C700540E4AD33DC26 /* libPods-sentiate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A00ABB8A2EF43B29D153B31 /* libPods-sentiate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		247746F718F9D65F001D0F10 /* sentiateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sentiateTests-Info.plist"; sourceTree = "<group>"; };
 		247746F918F9D65F001D0F10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		247746FB18F9D65F001D0F10 /* sentiateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sentiateTests.m; sourceTree = "<group>"; };
+		2477470518F9D8BE001D0F10 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2477470E18F9DD17001D0F10 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		2477470F18F9DD17001D0F10 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		2477471018F9DD17001D0F10 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		24DB874118F9E0C0009D3CDA /* SENViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENViewModel.h; sourceTree = "<group>"; };
+		24DB874218F9E0C0009D3CDA /* SENViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENViewModel.m; sourceTree = "<group>"; };
+		9A00ABB8A2EF43B29D153B31 /* libPods-sentiate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sentiate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2540339E2234AC89B6C9C5C /* Pods-sentiate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sentiate.xcconfig"; path = "Pods/Pods-sentiate.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2477470618F9D8BE001D0F10 /* CoreBluetooth.framework in Frameworks */,
 				247746D318F9D65F001D0F10 /* CoreGraphics.framework in Frameworks */,
 				247746D518F9D65F001D0F10 /* UIKit.framework in Frameworks */,
 				247746D118F9D65F001D0F10 /* Foundation.framework in Frameworks */,
+				676F685C700540E4AD33DC26 /* libPods-sentiate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +98,10 @@
 			children = (
 				247746D618F9D65F001D0F10 /* sentiate */,
 				247746F518F9D65F001D0F10 /* sentiateTests */,
+				2477470C18F9DD17001D0F10 /* Vendor */,
 				247746CF18F9D65F001D0F10 /* Frameworks */,
 				247746CE18F9D65F001D0F10 /* Products */,
+				F2540339E2234AC89B6C9C5C /* Pods-sentiate.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +117,12 @@
 		247746CF18F9D65F001D0F10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2477470518F9D8BE001D0F10 /* CoreBluetooth.framework */,
 				247746D018F9D65F001D0F10 /* Foundation.framework */,
 				247746D218F9D65F001D0F10 /* CoreGraphics.framework */,
 				247746D418F9D65F001D0F10 /* UIKit.framework */,
 				247746EF18F9D65F001D0F10 /* XCTest.framework */,
+				9A00ABB8A2EF43B29D153B31 /* libPods-sentiate.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +130,14 @@
 		247746D618F9D65F001D0F10 /* sentiate */ = {
 			isa = PBXGroup;
 			children = (
+				24DB874418F9EF9D009D3CDA /* SentiateAPI */,
 				247746DF18F9D65F001D0F10 /* SENAppDelegate.h */,
 				247746E018F9D65F001D0F10 /* SENAppDelegate.m */,
 				247746E218F9D65F001D0F10 /* Main.storyboard */,
 				247746E518F9D65F001D0F10 /* SENViewController.h */,
 				247746E618F9D65F001D0F10 /* SENViewController.m */,
+				24DB874118F9E0C0009D3CDA /* SENViewModel.h */,
+				24DB874218F9E0C0009D3CDA /* SENViewModel.m */,
 				247746E818F9D65F001D0F10 /* Images.xcassets */,
 				247746D718F9D65F001D0F10 /* Supporting Files */,
 			);
@@ -152,6 +173,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2477470C18F9DD17001D0F10 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2477470D18F9DD17001D0F10 /* BLE */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2477470D18F9DD17001D0F10 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				2477470E18F9DD17001D0F10 /* BLE.h */,
+				2477470F18F9DD17001D0F10 /* BLE.m */,
+				2477471018F9DD17001D0F10 /* BLEDefines.h */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		24DB874418F9EF9D009D3CDA /* SentiateAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SentiateAPI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiate" */;
 			buildPhases = (
+				880A729C5A564FCDB9FD6F03 /* Check Pods Manifest.lock */,
 				247746C918F9D65F001D0F10 /* Sources */,
 				247746CA18F9D65F001D0F10 /* Frameworks */,
 				247746CB18F9D65F001D0F10 /* Resources */,
+				9A40802C310E4659B3C08BEB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +293,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		880A729C5A564FCDB9FD6F03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A40802C310E4659B3C08BEB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-sentiate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		247746C918F9D65F001D0F10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,7 +333,9 @@
 			files = (
 				247746E718F9D65F001D0F10 /* SENViewController.m in Sources */,
 				247746DD18F9D65F001D0F10 /* main.m in Sources */,
+				24DB874318F9E0C0009D3CDA /* SENViewModel.m in Sources */,
 				247746E118F9D65F001D0F10 /* SENAppDelegate.m in Sources */,
+				2477471118F9DD17001D0F10 /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -374,6 +457,7 @@
 		};
 		2477470018F9D65F001D0F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2540339E2234AC89B6C9C5C /* Pods-sentiate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +471,7 @@
 		};
 		2477470118F9D65F001D0F10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2540339E2234AC89B6C9C5C /* Pods-sentiate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +542,7 @@
 				2477470118F9D65F001D0F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2477470218F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiateTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +551,7 @@
 				2477470418F9D65F001D0F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
