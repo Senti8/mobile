@@ -42,7 +42,8 @@ NSString *const kScentImageKey = @"kScentImageKey";
                           kScentTypeKey: @(SENScentTypeNature),
                           kScentImageKey: @"nature" },
                         @{kScentLabelKey:@"Space",
-                          kScentTypeKey: @(SENScentTypeSpace) },
+                          kScentTypeKey: @(SENScentTypeSpace),
+                          kScentImageKey: @"senti8" },
                         ];
 
         _ble = [[BLE alloc] init];
