@@ -20,6 +20,7 @@
 
 NSString *const kScentTypeKey = @"kScentTypeKey";
 NSString *const kScentLabelKey = @"kScentLabelKey";
+NSString *const kScentImageKey = @"kScentImageKey";
 
 @implementation SENViewModel
 
@@ -29,13 +30,17 @@ NSString *const kScentLabelKey = @"kScentLabelKey";
     if (self) {
         _scentItems = @[
                         @{kScentLabelKey:@"Soil",
-                          kScentTypeKey: @(SENScentTypeSoil) },
+                          kScentTypeKey: @(SENScentTypeSoil),
+                          kScentImageKey: @"earth" },
                         @{kScentLabelKey:@"Home",
-                          kScentTypeKey: @(SENScentTypeHome) },
+                          kScentTypeKey: @(SENScentTypeHome),
+                          kScentImageKey: @"home" },
                         @{kScentLabelKey:@"Food",
-                          kScentTypeKey: @(SENScentTypeFood) },
+                          kScentTypeKey: @(SENScentTypeFood),
+                          kScentImageKey: @"food" },
                         @{kScentLabelKey:@"Nature",
-                          kScentTypeKey: @(SENScentTypeNature) },
+                          kScentTypeKey: @(SENScentTypeNature),
+                          kScentImageKey: @"nature" },
                         @{kScentLabelKey:@"Space",
                           kScentTypeKey: @(SENScentTypeSpace) },
                         ];

@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, SENScentType){
 
 extern NSString *const kScentTypeKey;
 extern NSString *const kScentLabelKey;
+extern NSString *const kScentImageKey;
 
 @interface SENViewModel : NSObject
 @property(nonatomic, strong)NSArray *scentItems;

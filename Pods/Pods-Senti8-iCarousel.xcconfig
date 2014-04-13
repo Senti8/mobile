@@ -1,0 +1,1 @@
+PODS_SENTI__ICAROUSEL_OTHER_LDFLAGS = -framework QuartzCore
