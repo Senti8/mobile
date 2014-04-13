@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "247746CC18F9D65F001D0F10"
                BuildableName = "sentiate.app"
-               BlueprintName = "sentiate"
+               BlueprintName = "Senti8"
                ReferencedContainer = "container:sentiate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "247746CC18F9D65F001D0F10"
             BuildableName = "sentiate.app"
-            BlueprintName = "sentiate"
+            BlueprintName = "Senti8"
             ReferencedContainer = "container:sentiate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "247746CC18F9D65F001D0F10"
             BuildableName = "sentiate.app"
-            BlueprintName = "sentiate"
+            BlueprintName = "Senti8"
             ReferencedContainer = "container:sentiate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "247746CC18F9D65F001D0F10"
             BuildableName = "sentiate.app"
-            BlueprintName = "sentiate"
+            BlueprintName = "Senti8"
             ReferencedContainer = "container:sentiate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

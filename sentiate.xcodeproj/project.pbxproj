@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		247746CC18F9D65F001D0F10 /* sentiate */ = {
+		247746CC18F9D65F001D0F10 /* Senti8 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiate" */;
+			buildConfigurationList = 247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "Senti8" */;
 			buildPhases = (
 				880A729C5A564FCDB9FD6F03 /* Check Pods Manifest.lock */,
 				247746C918F9D65F001D0F10 /* Sources */,
@@ -215,7 +215,7 @@
 			);
 			dependencies = (
 			);
-			name = sentiate;
+			name = Senti8;
 			productName = sentiate;
 			productReference = 247746CD18F9D65F001D0F10 /* sentiate.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +248,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Robert Carlsen";
 				TargetAttributes = {
+					247746CC18F9D65F001D0F10 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
 					247746ED18F9D65F001D0F10 = {
 						TestTargetID = 247746CC18F9D65F001D0F10;
 					};
@@ -266,7 +273,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				247746CC18F9D65F001D0F10 /* sentiate */,
+				247746CC18F9D65F001D0F10 /* Senti8 */,
 				247746ED18F9D65F001D0F10 /* sentiateTests */,
 			);
 		};
@@ -352,7 +359,7 @@
 /* Begin PBXTargetDependency section */
 		247746F418F9D65F001D0F10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 247746CC18F9D65F001D0F10 /* sentiate */;
+			target = 247746CC18F9D65F001D0F10 /* Senti8 */;
 			targetProxy = 247746F318F9D65F001D0F10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -535,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "sentiate" */ = {
+		247746FF18F9D65F001D0F10 /* Build configuration list for PBXNativeTarget "Senti8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2477470018F9D65F001D0F10 /* Debug */,
