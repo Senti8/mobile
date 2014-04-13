@@ -69,7 +69,8 @@ NSString *const kScentLabelKey = @"kScentLabelKey";
 
 -(void)bleDidReceiveData:(unsigned char *)data length:(int)length;
 {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+    NSData *incomingData = [NSData dataWithBytes:data length:length];
+    NSLog(@"%s %@", __PRETTY_FUNCTION__, [incomingData description]);
 
     // byte 0 commandId
     // byte 1 scentId
