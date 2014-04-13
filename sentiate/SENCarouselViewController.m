@@ -16,6 +16,7 @@
 @property (nonatomic, strong)SENViewModel *viewModel;
 
 @property (weak, nonatomic) IBOutlet iCarousel *carouselView;
+@property (weak, nonatomic) IBOutlet UIView *selectedLineView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *connectButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *connectionIndicator;
 @end
@@ -180,15 +181,37 @@
     }
 }
 
+- (BOOL)carousel:(iCarousel *)carousel shouldSelectItemAtIndex:(NSInteger)index;
+{
+    if (index != carousel.currentItemIndex) {
+        return NO;
+    }
+    return YES;
+}
+
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
 {
     NSLog(@"Tapped view number: %@", @(index));
 
+    if (index != carousel.currentItemIndex) {
+        return;
+    }
+
     // this will enable the digital out (it will be automatically disabled after a short timeout)
     if (self.viewModel.isConnected) {
-        // not exactly safe..should delegate this to the model
+        NSLog(@"Sending emit scent command...");
         NSDictionary *item = self.viewModel.scentItems[index];
         [self.viewModel emitScentType:[item[kScentTypeKey] intValue]]; // maybe not type safe
+
+        // just fake the selected time out
+        self.selectedLineView.backgroundColor = [UIColor redColor];
+        @weakify(self);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:2. animations:^{
+                @strongify(self);
+                self.selectedLineView.backgroundColor = [UIColor lightGrayColor];
+            }];
+        });
     }
 }
 

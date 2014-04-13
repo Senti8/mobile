@@ -15,7 +15,8 @@ typedef NS_ENUM(NSInteger, SENScentType){
     SENScentTypeHome,
     SENScentTypeFood,
     SENScentTypeNature,
-    SENScentTypeSpace
+    SENScentTypeSpace,
+    SENScentTypeFire
 };
 
 extern NSString *const kScentTypeKey;
